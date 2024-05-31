@@ -1,0 +1,122 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CodeApplication",
+            "request": "launch",
+            "mainClass": "com.itheima.CodeApplication",
+            "projectName": "code-template"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.hunter.Main",
+            "projectName": "common-db"
+        },
+        {
+            "type": "java",
+            "name": "ChineseUtils",
+            "request": "launch",
+            "mainClass": "entity.ChineseUtils",
+            "projectName": "common"
+        },
+        {
+            "type": "java",
+            "name": "IdWorker",
+            "request": "launch",
+            "mainClass": "entity.IdWorker",
+            "projectName": "common"
+        },
+        {
+            "type": "java",
+            "name": "JwtUtil",
+            "request": "launch",
+            "mainClass": "entity.JwtUtil",
+            "projectName": "common"
+        },
+        {
+            "type": "java",
+            "name": "Page",
+            "request": "launch",
+            "mainClass": "entity.Page",
+            "projectName": "common"
+        },
+        {
+            "type": "java",
+            "name": "EurekaApplication",
+            "request": "launch",
+            "mainClass": "com.hunter.EurekaApplication",
+            "projectName": "eureka"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "com.hunter.Main",
+            "projectName": "eureka"
+        },
+        {
+            "type": "java",
+            "name": "Main(2)",
+            "request": "launch",
+            "mainClass": "com.hunter.Main",
+            "projectName": "gateway"
+        },
+        {
+            "type": "java",
+            "name": "Main(3)",
+            "request": "launch",
+            "mainClass": "com.hunter.Main",
+            "projectName": "service-file"
+        },
+        {
+            "type": "java",
+            "name": "OrderApplication",
+            "request": "launch",
+            "mainClass": "com.hunter.user.OrderApplication",
+            "projectName": "service-order"
+        },
+        {
+            "type": "java",
+            "name": "TaskApplication",
+            "request": "launch",
+            "mainClass": "com.hunter.task.TaskApplication",
+            "projectName": "service-task"
+        },
+        {
+            "type": "java",
+            "name": "Main(4)",
+            "request": "launch",
+            "mainClass": "com.hunter.Main",
+            "projectName": "user-oauth2"
+        },
+        {
+            "type": "java",
+            "name": "UserApplication",
+            "request": "launch",
+            "mainClass": "com.hunter.user.UserApplication",
+            "projectName": "service-user"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-UserApplication<user>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.hunter.user.UserApplication",
+            "projectName": "user",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

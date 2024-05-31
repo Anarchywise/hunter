@@ -1,0 +1,67 @@
+# Java编译输出目录
+**/target
+/bin/
+# IDEA
+/.idea/
+*.iml
+
+# Eclipse
+/.classpath
+/.project
+/.settings/
+!/code-template/target
+
+# MacOS
+.DS_Store
+
+# Maven
+/pom.xml.tag
+/pom.xml.releaseBackup
+/pom.xml.versionsBackup
+/logs/
+release.properties
+
+# Gradle
+.gradle
+/build/
+
+# Spring Boot
+/spring-boot-loader/
+!/src/main/resources/static/
+/!src/main/resources/public/
+/!src/main/resources/templates/
+/!src/main/resources/META-INF/resources/
+
+# Logs
+*.log
+
+# Lombok generated
+*.delombok/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Generated files
+*.generated
+
+# Thumbnails
+._*
+
+# Private files
+*.pem
+*.p12
+*.cer
+*.crt
+*.key
+
+.fake
