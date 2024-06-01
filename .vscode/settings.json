@@ -1,4 +1,5 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
     "java.jdt.ls.java.home": "c:\\Users\\ZhangHao\\.jdks\\corretto-1.8.0_382",
+    "java.configuration.updateBuildConfiguration": "automatic",
 }

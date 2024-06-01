@@ -82,4 +82,7 @@ public interface UserFeign {
      */
     @GetMapping
     Result<List<User>> findAll();
+
+    @PostMapping("/load/{username}")
+    Result<User> findByUsername(@PathVariable String username);
 }

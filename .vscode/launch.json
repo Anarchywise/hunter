@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "OAthApplication",
+            "request": "launch",
+            "mainClass": "com.hunter.OAthApplication",
+            "projectName": "user-oauth2"
+        },
+        {
+            "type": "java",
+            "name": "UserDetailsServiceImpl",
+            "request": "launch",
+            "mainClass": "com.hunter.oauth.config.UserDetailsServiceImpl",
+            "projectName": "user-oauth2"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -96,10 +110,11 @@
         },
         {
             "type": "java",
-            "name": "Main(4)",
+            "name": "OAthApplication",
             "request": "launch",
             "mainClass": "com.hunter.Main",
-            "projectName": "user-oauth2"
+            "projectName": "user-oauth2",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=14483 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=user-oauth2"
         },
         {
             "type": "java",
@@ -114,7 +129,7 @@
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "mainClass": "com.hunter.user.UserApplication",
-            "projectName": "user",
+            "projectName": "service-user",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }

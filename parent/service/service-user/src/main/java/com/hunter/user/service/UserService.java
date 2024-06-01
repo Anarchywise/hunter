@@ -3,6 +3,8 @@ package com.hunter.user.service;
 import com.github.pagehelper.PageInfo;
 import com.hunter.user.pojo.User;
 
+import entity.Result;
+
 import java.util.List;
 /****
  * @Author:shenkunlin
@@ -65,4 +67,6 @@ public interface UserService {
      * @return
      */
     List<User> findAll();
+
+    User findByUsername(String username);
 }

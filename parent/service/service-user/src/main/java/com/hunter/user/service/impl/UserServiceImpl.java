@@ -4,6 +4,9 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.hunter.user.dao.UserMapper;
 import com.hunter.user.service.UserService;
+
+import entity.Result;
+
 import com.hunter.user.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -145,5 +148,20 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> findAll() {
         return userMapper.selectAll();
+    }
+
+    /**
+     * 根据username返回用户
+     */
+    @Override
+    public User findByUsername(String username){
+        User user = new User();
+        user.setUsername(username);
+        List<User> list = userMapper.select(user);
+        if(list.isEmpty()){
+            return new User();
+        }else{
+            return list.get(0);
+        }
     }
 }

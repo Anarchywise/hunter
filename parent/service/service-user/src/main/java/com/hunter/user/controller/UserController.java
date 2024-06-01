@@ -10,6 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
 
 /****
  * @Author:shenkunlin
@@ -144,4 +147,12 @@ public class UserController {
         List<User> list = userService.findAll();
         return new Result<List<User>>(true, StatusCode.OK,"查询成功",list) ;
     }
+
+    @PostMapping("/load/{username}")
+    public Result<User> findByUserName(@PathVariable String username) {
+        //TODO: process POST request
+        User user = userService.findByUsername(username);
+        return new Result<>(true,StatusCode.OK,"查询成功",user);
+    }
+    
 }
