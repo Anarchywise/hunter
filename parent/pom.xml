@@ -19,6 +19,7 @@
 		<module>service</module>
 		<module>service-api</module>
 		<module>user-oauth2</module>
+        <module>service-mail</module>
 	</modules>
 
 	<name>parent</name>
